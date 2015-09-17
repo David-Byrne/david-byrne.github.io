@@ -1,2 +1,2 @@
-# davidbyrne.github.io
-Test repository to make use of github's pages feature
+# david-byrne.github.io
+Repository to make use of github's pages feature
