@@ -30,11 +30,23 @@
 				text-align: center;
 				display: block;
    				margin: 0 auto;
-				/*height: 85vh;*/
-				/*background-color: springgreen;*/
-				color: red;
 			}
 			.dragonClass
+			{
+				max-width: 100%;
+				max-height:100%;
+			}
+			.engine
+			{
+				display: inline-block;
+				max-height:100%;
+				max-width: 1100px;
+				text-align: center;
+				display: block;
+   				margin: 0 auto;
+				height: 80vh;
+			}
+			.engineImg
 			{
 				max-width: 100%;
 				max-height:100%;
@@ -55,10 +67,13 @@
 				padding-top: 5px;
 				padding-bottom: 5px;
 				display: inline-block;
- 				width: 220px;
+ 				width: 216px;
 				background-color: #333333;
 				color: #DDDDDD;
+				border-right:2px solid #DDDDDD;
+				border-left:2px solid #DDDDDD;
 			}
+
 			.button:hover
 			{
 				background-color: #DDDDDD;
@@ -72,6 +87,17 @@
 				margin: 0 auto;
 				max-width: 1100px;
 			}
+			.text
+			{
+				padding-left: 10px;
+				padding-right: 5px;
+			}
+			.bottom
+			{
+				height: 50vh;
+				color: aqua;
+				text-align: center;
+			}
 		</style>
 		<script type="text/javascript" >
 			
@@ -82,56 +108,91 @@
 		<div id="header">
 			<img src="dragon7.png" class="dragonClass">
 		</div>
+
 		<div class="section">
+			<!--Formatted with the > on the next line as any white space shows up as a space in the website itself-->
 			<a href="#aboutme"><span class="button">About Me</span></a
 			><a href="#web"><span class="button">Web</span></a
 			><a href="#c"><span class="button">C</span></a
 			><a href="#java"><span class="button">Java</span></a
 			><a href="#github"><span class="button">Github</span></a>
-			<!--Formatted with the > on the next line as any white space shows up as a space in the website itself-->
 		</div>
-		
+
 		<a name="aboutme"></a>
 		<div class="section section1" id="aboutme" >
 			<h1>About me</h1>
-			My name is David and this is still under construction...
+			My name is David and this is still under construction... I am a second year in somputer science and IT in NUI Galway.
 			<br><br><br><br><br><br><br><br><br><br>
 		</div>
 		
 		<div class="partition"></div>
 		<a name="web"></a>
 		<div class="section ">
-			<h1>Web</h1>
-			I have made a few websites both for assignments and to improve my skills when I've got free time.
-			They're getting better each time and I learn more and get more experienced at it.
-			<br><br><br><br><br><br><br><br><br><br>
+			<div class="text">
+				<h1>Web</h1>
+				I have made a few websites both for assignments and to improve my skills when I've got free time.
+				They're getting better each time and I learn more and get more experienced at it.<br>
+				<br>
+				I designed this to add a unique look to my portfolio as I'm very interested in space.<br>
+				<br>
+				I made <a href="http://danu6.it.nuigalway.ie/DavidByrne/WT/">The Working Title</a> in a group project
+				at the end of first year in our C programming module. Unfortuantely it doesn't do much at the moment as
+				its back-end was built using C and CGI which isn't supported by the server it's currently on.<br>
+				<br>
+				Over the Christmas holidays in first year I built <a href="http://danu6.it.nuigalway.ie/DavidByrne/crypto/">Crypto</a>
+				to improve my cryptography skills. It supports Reverse, Rot13 and Affine cyphers but was more built as a proof of concept
+				rather than to serve a cryptography service.<br>
+				<br>
+				During the first semester of first year I created <a href="http://danu6.it.nuigalway.ie/DavidByrne/BBB/">
+				Byrne's Brilliant Bazaar</a> for the continous assessment part of the module. We were given a set list of things to include 
+				each week and we were encouraged to personalise it and give it a light humoured theme.
+				<br><br>
+			</div>
 		</div>
 		
 		<div class="partition"></div>
 		<a name="c"></a>
 		<div class="section ">
-			<h1>C</h1>
-			I did C in first year and you can see many of the labs and some of my projects 
-			<a href="https://github.com/David-Byrne/C-programming">here</a>
-			<br><br><br><br><br><br><br><br><br><br>
+			<div class="text">
+				<h1>C</h1>
+				I did C in first year and you can see many of the labs and some of my projects on my 
+				<a href="https://github.com/David-Byrne/C-programming">C GitHub repository</a>.<br>
+				<br>We finished the year with a final
+				group project. My team decided to use CGI to connect it to a webpage for a GUI (see The Working Title in the web section).
+				We encorperated the javascript we learnt in other modules as a client-side language as we weren't limited to just C 
+				for the project. The back end was written entirely in C and it kept track of stock, decrypted the card details, dealt with all
+				the transactions, saved the details entered in feedback forms into text files and allowed people with admin access to edit 
+				and delete stock records.<br>
+				At that point it was the largest single project either of us had ever done and our first time to use CGI and C in a
+				non-trivial manner. We found it exteremly satisfying however and learned loads from the experience.
+				<br><br>
+			</div>
 		</div>
 		
 		<div class="partition"></div>
 		<a name="java"></a>
 		<div class="section ">
-			<h1>Java</h1>
-			My name is David
-			<br><br><br><br><br><br><br><br><br><br>
+			<div class="text">
+				<h1>Java</h1>
+				My name is David
+				<br><br><br><br><br><br><br><br><br><br>
+			</div>
 		</div>
 		
 		<div class="partition"></div>
 		<a name="github"></a>
 		<div class="section ">
-			<h1>Github</h1>
-			My name is David
-			<br><br><br><br><br><br><br><br><br><br>
+			<div class="text">
+				<h1>Github</h1>
+				My name is David
+				<br><br><br><br><br><br><br><br><br><br>
+			</div>
 		</div>
-
+		<div class="partition"></div>
+		<div id="base" class="engine">
+			<img src="engine4.png" class="engineImg">
+		</div>
+		<div class="bottom">Designed by David Byrne, 2015</div>
 	</body> 
 
 </html>
