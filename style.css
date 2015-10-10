@@ -1,0 +1,37 @@
+* { margin:0; padding:0; }
+html
+{
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+}
+body 
+{
+	background-image: url("stars.jpg");
+	background-color: #cccccc;
+	background-attachment: fixed;
+
+}
+
+.dragonClass
+{
+	max-width: 100%;
+	max-height:100%;
+}
+
+.engineImg
+{
+	max-width: 100%;
+	max-height:100%;
+}
+
+.button:hover
+{
+	background-color: #DDDDDD;
+	color: #333333;
+}
+.bottom
+{
+	height: 50vh;
+	color: aqua;
+	text-align: center;
+}
