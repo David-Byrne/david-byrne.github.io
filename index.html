@@ -1,134 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>
-        David Byrne
-    </title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width:1200px) and (max-width:1600px)" href="style1200.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width:720px) and (max-width:1199px)" href="style700.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width:719px)" href="style0.css">
-    <script type="text/javascript">
-
-    </script>
+    <title>David Byrne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="David Byrne's portfolio">
+    <meta name="author" content="David Byrne">
+    <meta name="theme-color" content="#1AA260">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <style>
+        
+        .greyBackground {
+            background-color: #FAFAFA;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="header">
-        <br>
-        <img src="dragon8.gif" class="dragonClass">
-    </div>
+    <nav class="navbar navbar-dark bg-inverse">
+        <a class="navbar-brand" href="#">David Byrne</a>
+        <ul class="nav navbar-nav pull-xs-right">
 
-    <div class="section">
-        <!--Formatted with the > on the next line as any white space shows up as a space in the website itself-->
-        <a href="#aboutme"><span class="button">About Me</span></a
-			><a href="#web"><span class="button">Web</span></a
-			><a href="#c"><span class="button">C</span></a
-			><a href="#java"><span class="button">Java</span></a
-			><a href="#github"><span class="button">Github</span></a>
-    </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#">placeholder</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">placeholder 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="blank" href="https://github.com/David-Byrne">Github</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="mainContent" class="container">
+       
+       
+            <div class="card-group">
+                
+                <div class="card greyBackground">
+                    <img class="card-img-top img-fluid" src="http://www.newstension.com/wp-content/uploads/2016/02/image-10259.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">Java</h4>
+                    </div>
+                </div>
 
-    <a name="aboutme"></a>
-    <div class="section section1" id="aboutme">
-        <div class="text">
-            <h1>About me</h1> My name is David Byrne and I'm a second year in computer science and IT in NUI Galway. I'm very interested in
-            technology and spend a lot of my free time trying out new and exciting things, this website being one of the
-            results.
-            <br>
-            <br> I'm using this website as a portfolio of sorts so you can see my other projects and code I've written. I try
-            to keep updating this as I learn more and more so it's always a work in progress.
-            <br>
-            <br> My latest completed project is called <a href="http://david-byrne.github.io/Hangons/">Hangons</a> and it's described
-            in the <a href="#web">Web</a> section. I'm currently developing a web app using the MEAN stack in a group project
-            but that's not at a stage to share quite yet. Also I'm planning to make a proper Android app once I've learned
-            enough Java so that's another thing to watch out for.
-            <br>
-            <br>
+                <div class="card greyBackground">
+                    <img class="card-img-top img-fluid" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">HTML</h4>
+                    </div>
+                </div>
+
+                <div class="card greyBackground">
+                    <img class="card-img-top img-fluid" src="http://logonoid.com/images/css3-logo.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">CSS</h4>
+                    </div>
+                </div>
+
+                <div class="card greyBackground">
+                    <img class="card-img-top img-fluid" src="http://www.b2bweb.fr/wp-content/uploads/js-logo-badge-512.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">Javascript</h4>
+                    </div>
+                </div>
+                
+                <div class="card greyBackground">
+                    <img class="card-img-top img-fluid" src="http://www.emmabeaton.com/img/logos/node-js.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">Node.js</h4>
+                    </div>
+                </div>
+                
+                <div class="card greyBackground">
+                    <img class="card-img-top img-fluid" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-icons-alphanumeric/070841-glossy-black-icon-alphanumeric-letter-c.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">C</h4>
+                    </div>
+                </div>
+                
+                <div class="card greyBackground">
+                    <img class="card-img-top img-fluid" src="https://upload.wikimedia.org/wikipedia/en/9/90/Mocha_%28JavaScript_framework%29_%28logo%29.svg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">Mocha.js</h4>
+                    </div>
+                </div>
+                
+                <div class="card greyBackground">
+                    <img class="card-img-top img-fluid" src="https://angular.io/resources/images/logos/standard/shield-large.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title text-xs-center">Angular.js</h4>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-    </div>
+    
 
-    <div class="partition"></div>
-    <a name="web"></a>
-    <div class="section ">
-        <div class="text">
-            <h1>Web</h1> I have made a few websites both for assignments and to improve my skills when I've got free time. They're getting
-            better each time and I learn more and get more experienced at it.
-            <br>
-            <br> I designed this to add a unique look to my portfolio as I'm very interested in space.
-            <br>
-            <br> Over the Christmas break in second year I developed <a href="http://david-byrne.github.io/Hangons/">Hangons</a>.
-            It's a fully client side web-app to parse the Hangouts.json data file you get when you back up your Hangouts
-            messaging data. It uses Angular.js (1) and a Bootstrap theme and can convert the Hangouts.json file into a much
-            more friendly format. It can create a simplified version of the JSON file which takes up less than a fifth of
-            the space compared to the version offered by Google Takeout.
-            <br>
-            <br> I made <a href="http://danu6.it.nuigalway.ie/DavidByrne/WT/">The Working Title</a> in a group project at the
-            end of first year in our C programming module. Unfortunately it doesn't do much at the moment as its back-end
-            was built using C and CGI which isn't supported by the server it's currently on.
-            <br>
-            <br> Over the Christmas holidays in first year I built <a href="http://danu6.it.nuigalway.ie/DavidByrne/crypto/">Crypto</a>            to improve my cryptography skills. It supports Reverse, Rot13 and Affine cyphers but was more built as a proof
-            of concept rather than to serve a cryptography service.
-            <br>
-            <br> During the first semester of first year I created <a href="http://danu6.it.nuigalway.ie/DavidByrne/BBB/">
-				Byrne's Brilliant Bazaar</a> for the continous assessment part of the module. We were given a set list of things to include
-            each week and we were encouraged to personalise it and give it a light humoured theme.
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div class="partition"></div>
-    <a name="c"></a>
-    <div class="section ">
-        <div class="text">
-            <h1>C</h1> I did C in first year and you can see many of the labs and some of my projects on my
-            <a href="https://github.com/David-Byrne/C-programming">C GitHub repository</a>.
-            <br>
-            <br>We finished the year with a final group project. My team decided to use CGI to connect it to a webpage for a
-            GUI (see The Working Title in the web section). We incorporated the javascript we learnt in other modules as
-            a client-side language as we weren't limited to just C for the project. The back end was written entirely in
-            C and it kept track of stock, decrypted the card details, dealt with all the transactions, saved the details
-            entered in feedback forms into text files and allowed people with admin access to edit and delete stock records.
-            <br> At that point it was the largest single project either of us had ever done and our first time to use CGI and
-            C in a non-trivial manner. We found it extremely satisfying however and learned loads from the experience.
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div class="partition"></div>
-    <a name="java"></a>
-    <div class="section ">
-        <div class="text">
-            <h1>Java</h1> I started studying Java this year. During the first semester we we focusing on learning the Object Orientated
-            aspects of it but now we're learning more about data-structures and algorithms. My labs and assignments from
-            the first semester are up on my Java Github repo.
-            <br>
-            <br> With the Java I've learned so far I made a very simple android app but I'll wait until I'm more experienced
-            in Java before doing any serious android development.
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div class="partition"></div>
-    <a name="github"></a>
-    <div class="section ">
-        <div class="text">
-            <h1>Github</h1> My GitHub is home to many of my projects and assignments in C and Java. Most of my web development projects
-            are hosted on the server NUI Galway allocated me space on or on a Github pages site. They're linked above in
-            the web section.
-            <br>
-            <br>
-        </div>
-    </div>
-    <div class="partition"></div>
-    <div id="base" class="engine">
-        <img src="engine5.gif" class="engineImg">
-    </div>
-    <div class="bottom">Designed by David Byrne, 2015-2016</div>
 </body>
 
 </html>
