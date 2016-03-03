@@ -23,7 +23,8 @@
             background-color: #FAFAFA;
         }
         .title{
-            padding : 1em 3em 1em 3em;
+            padding-top:1em;
+            padding-bottom: 1em;
         }
     </style>
 </head>
@@ -32,13 +33,6 @@
     <nav class="navbar navbar-dark bg-inverse">
         <a class="navbar-brand" href="#">David Byrne</a>
         <ul class="nav navbar-nav pull-xs-right">
-
-            <li class="nav-item">
-                <a class="nav-link" href="#">placeholder</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">placeholder 2</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" target="blank" href="https://github.com/David-Byrne">Github</a>
             </li>
@@ -155,6 +149,31 @@
             </div>
             <p class="text-xs-right">and more...</p>
         </div>
+        
+        <div class="card card-block">
+            <h4 class="card-title">Projects</h4>
+            <div class="card greyBackground col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <img class="card-img-top img-fluid" src="images/Hangons.png" alt="Hangons">
+                <div class="card-block">
+                    <h4 class="card-title">Hangons</h4>
+                    <p class="card-text">A client side parser for Hangouts messenger's JSON data backup. Developed over the Christmas
+                        break as a personal project.
+                    </p>
+                </div>
+            </div>
+            <div class="card greyBackground col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <img class="card-img-top img-fluid" src="images/WT.png" alt="The Working Title">
+                <div class="card-block">
+                    <h4 class="card-title">The Working Title</h4>
+                    <p class="card-text">An imaginary bookshop's website running on a CGI backend written in C. Written for our first 
+                        year final group project in C-programming</p>
+                </div>
+            </div>
+        
+        <span class="text-xs-right"> &nbsp;</span>
+        <!-- Needed to keep the individual cards within the project card. If it's not here the project card slides up underneath them
+            possible a bug inn Bootstrap 4 alpha V2.-->
+        
     </div>
     
     
