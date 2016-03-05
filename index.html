@@ -14,16 +14,24 @@
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
     <style>
         @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700");
-        
-        body
-        {
+        body {
             font-family: "Roboto";
+            background-color: #ccffe6;
         }
+        
         .greyBackground {
             background-color: #FAFAFA;
         }
-        .title{
-            padding-top:1em;
+        
+        .whiteBackground {
+            background-color: #FFFFFF;
+        }
+        .skillName {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .title {
+            padding-top: 1em;
             padding-bottom: 1em;
         }
     </style>
@@ -46,136 +54,197 @@
         <span class="hidden-md-down"> md</span>
         <span class="hidden-lg-down"> lg</span>
         <span class="hidden-xl-down"> xl</span>-->
-        
-        <div class="card card-block">
-            <h4 class="card-title">About me</h4>
+
+        <div class="card card-block whiteBackground">
+            <h3 class="card-title">About me</h3>
             <p class="card-text">
-                I'm currently a second year Computer Science & IT student in NUI Galway and enjoying every minute of it.
-                I've always loved maths and other subjects that invlove problem solving. With a strong interest in technology,
-                computer science was an obvious choice. I love working with new and exciting things so it's a great area to be
-                in.
+                I'm currently a second year Computer Science & IT student in NUI Galway and I'm enjoying every minute of it. I've always loved
+                maths and other subjects that invlove problem solving so with a strong interest in technology, computer science
+                was an obvious choice. I love working with new and exciting things so it's a great area to be in.
             </p>
         </div>
-        
-        <div class="card card-block">
-            <h4 class="card-title">Languages, Frameworks and Skills</h4>
-            <div class= "text-xs-center">
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+
+        <div class="card card-block whiteBackground">
+            <h3 class="card-title">Languages, Frameworks and Skills</h3>
+            <div class="text-xs-center">
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/java.png" alt="Java icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title text-xs-center">Java</span>
                     </div>
                 </div>
-                
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/c.gif"
-                    alt="C icon">
-                    <div class="card-block">
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/c.gif" alt="C icon">
+                    <div class="skillName">
                         <span class="card-title">C</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/HTML5.png" alt="HTML icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title ">HTML</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/css3.png" alt="CSS icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title ">CSS</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/js.jpg" alt="JavaScript icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title">Javascript</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/angularjs.png" alt="AngularJS icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title">Angular.js</span>
                     </div>
                 </div>
-                
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/nodejs.png" alt="NodeJS icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title">Node.js</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/mocha.png"
-                    alt="MochaJS icon">
-                    <div class="card-block">
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/mocha.png" alt="MochaJS icon">
+                    <div class="skillName">
                         <span class="card-title">Mocha.js</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/matlab.png" alt="Matlab icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title">Matlab</span>
                     </div>
                 </div>
-                
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/sql.png" alt="SQL icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title">SQL</span>
                     </div>
                 </div>
-                
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/mongodb.png" alt="MongoDB icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title">MongoDB</span>
                     </div>
                 </div>
-                
-                <div class="card greyBackground col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
                     <img class="card-img-top img-fluid" src="images/git.png" alt="Git icon">
-                    <div class="card-block">
+                    <div class="skillName">
                         <span class="card-title">Git</span>
                     </div>
                 </div>
-                
+
             </div>
             <p class="text-xs-right">and more...</p>
         </div>
-        
-        <div class="card card-block">
-            <h4 class="card-title">Projects</h4>
-            <div class="card greyBackground col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img class="card-img-top img-fluid" src="images/Hangons.png" alt="Hangons">
+
+        <div class="card card-block whiteBackground">
+            <h3 class="card-title">Projects</h3>
+
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
                 <div class="card-block">
-                    <h4 class="card-title">Hangons</h4>
-                    <p class="card-text">A client side parser for Hangouts messenger's JSON data backup. Developed over the Christmas
-                        break as a personal project.
+                    <a href="http://david-byrne.github.io/Hangons/" target="blank">
+                        <h4 class="card-title">Hangons</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/Hangons.png" alt="Hangons">
+                <div class="card-block">
+                    <p class="card-text">A client side parser for Hangouts messenger's JSON backup data. Developed over the Christmas break as
+                        a personal project.
                     </p>
                 </div>
             </div>
-            <div class="card greyBackground col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img class="card-img-top img-fluid" src="images/WT.png" alt="The Working Title">
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
                 <div class="card-block">
-                    <h4 class="card-title">The Working Title</h4>
-                    <p class="card-text">An imaginary bookshop's website running on a CGI backend written in C. Written for our first 
-                        year final group project in C-programming</p>
+                    <a href="http://danu6.it.nuigalway.ie/DavidByrne/WT/" target="blank">
+                        <h4 class="card-title">The Working Title</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/WT.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">An bookshop's website running on a CGI backend written in C. Developed for our first year final
+                        group project in C programming</p>
                 </div>
             </div>
-        
-        <span class="text-xs-right"> &nbsp;</span>
-        <!-- Needed to keep the individual cards within the project card. If it's not here the project card slides up underneath them
-            possible a bug inn Bootstrap 4 alpha V2.-->
-        
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
+                        <h4 class="card-title">Space Invaders</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/SpaceInvaders.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
+                        module in second year.
+                    </p>
+                </div>
+            </div>
+            <!--TODO
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
+                        <h4 class="card-title">Space Invaders</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/SpaceInvaders.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
+                        module in second year.
+                    </p>
+                </div>
+            </div>
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
+                        <h4 class="card-title">Space Invaders</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/BBB.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
+                        module in second year.
+                    </p>
+                </div>
+            </div>
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
+                        <h4 class="card-title">Space Invaders</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/Crypto.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
+                        module in second year.
+                    </p>
+                </div>
+            </div>-->
+
+            <span class="text-xs-right"> &nbsp;</span>
+            <!-- Needed to keep the individual cards within the project card. If it's not here the project card slides up underneath them
+            possible a bug inn Bootstrap 4 alpha V2. 
+            Checked with dev branch of bootstrap 4 and it's no longer needed so the bug must've been patched and should be
+            fixed in alpha V3-->
+
+        </div>
     </div>
-    
     
 </body>
 
