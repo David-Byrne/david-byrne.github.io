@@ -9,6 +9,7 @@
     <meta name="author" content="David Byrne">
     <meta name="theme-color" content="#1AA260">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="tether.min.js"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
@@ -34,6 +35,11 @@
             padding-top: 1em;
             padding-bottom: 1em;
         }
+        .contactIcon a:link { color: #373a3c; }
+        .contactIcon a:visited { color: #373a3c; }
+        #githubLink a:hover { color: #660066; }
+        #twitterLink a:hover { color: #1da1f2; }
+        #emailLink a:hover { color: #ff1a1a; }
     </style>
 </head>
 
@@ -156,7 +162,7 @@
         </div>
 
         <div class="card card-block whiteBackground">
-            <h3 class="card-title">Projects</h3>
+            <h3 class="card-title">Some of my Projects</h3>
 
             <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
                 <div class="card-block">
@@ -171,6 +177,35 @@
                     </p>
                 </div>
             </div>
+            
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="https://github.com/Eoin-M/yourspace" target="blank">
+                        <h4 class="card-title">Yourspace</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/Yourspace2.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A personalised internet homepage built on the MEAN stack. This is a group project for our software
+                        engineering module. It should be completed by May.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
+                        <h4 class="card-title">Space Invaders</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/SpaceInvaders.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
+                        module in second year.
+                    </p>
+                </div>
+            </div>
+            
             <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
                 <div class="card-block">
                     <a href="http://danu6.it.nuigalway.ie/DavidByrne/WT/" target="blank">
@@ -180,62 +215,38 @@
                 <img class="img-fluid" src="images/WT.png" alt="The Working Title">
                 <div class="card-block">
                     <p class="card-text">An bookshop's website running on a CGI backend written in C. Developed for our first year final
-                        group project in C programming</p>
-                </div>
-            </div>
-            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                <div class="card-block">
-                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
-                        <h4 class="card-title">Space Invaders</h4>
-                    </a>
-                </div>
-                <img class="img-fluid" src="images/SpaceInvaders.png" alt="The Working Title">
-                <div class="card-block">
-                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
-                        module in second year.
+                        group project in C programming
                     </p>
                 </div>
             </div>
-            <!--TODO
+            
             <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
                 <div class="card-block">
-                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
-                        <h4 class="card-title">Space Invaders</h4>
-                    </a>
-                </div>
-                <img class="img-fluid" src="images/SpaceInvaders.png" alt="The Working Title">
-                <div class="card-block">
-                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
-                        module in second year.
-                    </p>
-                </div>
-            </div>
-            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                <div class="card-block">
-                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
-                        <h4 class="card-title">Space Invaders</h4>
-                    </a>
-                </div>
-                <img class="img-fluid" src="images/BBB.png" alt="The Working Title">
-                <div class="card-block">
-                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
-                        module in second year.
-                    </p>
-                </div>
-            </div>
-            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                <div class="card-block">
-                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
-                        <h4 class="card-title">Space Invaders</h4>
+                    <a href="http://danu6.it.nuigalway.ie/DavidByrne/crypto/" target="blank">
+                        <h4 class="card-title">Crypto</h4>
                     </a>
                 </div>
                 <img class="img-fluid" src="images/Crypto.png" alt="The Working Title">
                 <div class="card-block">
-                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
-                        module in second year.
+                    <p class="card-text">A website that implements basic encryption and decryption using JavaScript. I made it over
+                        Christmas in first year to learn some cryptography.
                     </p>
                 </div>
-            </div>-->
+            </div>
+            
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="http://danu6.it.nuigalway.ie/DavidByrne/BBB/" target="blank">
+                        <h4 class="card-title">Byrne's Brilliant Bazaar</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/BBB.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A imaginary shop's website developed in first year to learn basic HTML and CSS. We were 
+                        encouraged to make it fun and light hearted.
+                    </p>
+                </div>
+            </div>
 
             <span class="text-xs-right"> &nbsp;</span>
             <!-- Needed to keep the individual cards within the project card. If it's not here the project card slides up underneath them
@@ -243,6 +254,37 @@
             Checked with dev branch of bootstrap 4 and it's no longer needed so the bug must've been patched and should be
             fixed in alpha V3-->
 
+        </div>
+        
+        <div class="card card-block whiteBackground" id="contactBox">
+            <h3 class="card-title">Let's get in touch!</h3>
+            
+            <div class="text-xs-center col-xs-4">
+                <span class="contactIcon" id="twitterLink">
+                    <a href="https://twitter.com/David_DByrne" target="blank">
+                        <i class="fa fa-twitter fa-3x"></i><br>
+                    </a>
+                </span>
+                <a href="https://twitter.com/David_DByrne" target="blank">@David_DByrne</a>
+            </div>
+            <div class="text-xs-center col-xs-4">
+                <span class="contactIcon" id="githubLink">
+                    <a href="https://github.com/David-Byrne" target="blank">
+                        <i class="fa fa-github fa-3x"></i><br>
+                    </a>
+                </span>
+                <a href="https://github.com/David-Byrne" target="blank">David-Byrne</a>
+            </div>
+            <div class="text-xs-center col-xs-4">
+                <span class="contactIcon" id="emailLink">
+                    <a href="mailto:david.dbyrne@gmail.com" target="blank">
+                        <i class="fa fa-envelope-o fa-3x"></i><br>
+                    </a>
+                </span>
+                <a href="mailto:david.dbyrne@gmail.com" target="blank">David.dbyrne@gmail.com</a>
+            </div>
+            
+            <span class="text-xs-right"><br> &nbsp;</span>
         </div>
     </div>
     
