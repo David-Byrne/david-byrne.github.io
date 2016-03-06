@@ -17,7 +17,9 @@
         @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700");
         body {
             font-family: "Roboto";
-            background-color: #ccffe6;
+            background-color: #39C9DF;
+            background-image: url("images/bg4.png");
+            background-size: cover;
         }
         
         .greyBackground {
@@ -35,11 +37,13 @@
             padding-top: 1em;
             padding-bottom: 1em;
         }
-        .contactIcon a:link { color: #373a3c; }
-        .contactIcon a:visited { color: #373a3c; }
-        #githubLink a:hover { color: #660066; }
-        #twitterLink a:hover { color: #1da1f2; }
-        #emailLink a:hover { color: #ff1a1a; }
+        
+        #twitterLink:not(:hover) .contactIcon{color: #373a3c;}
+        #twitterLink:hover {color: #1da1f2;}
+        #githubLink:not(:hover) .contactIcon{color: #373a3c;}
+        #githubLink:hover {color: #660066;}
+        #emailLink:not(:hover) .contactIcon{color: #373a3c;}
+        #emailLink:hover {color: #ff1a1a;}
     </style>
 </head>
 
@@ -172,8 +176,8 @@
                 </div>
                 <img class="img-fluid" src="images/Hangons.png" alt="Hangons">
                 <div class="card-block">
-                    <p class="card-text">A client side parser for Hangouts messenger's JSON backup data. Developed over the Christmas break as
-                        a personal project.
+                    <p class="card-text">A client side parser and formatter for Hangouts messenger's JSON backup data. I developed 
+                        over the Christmas break as a personal project.
                     </p>
                 </div>
             </div>
@@ -187,7 +191,7 @@
                 <img class="img-fluid" src="images/Yourspace2.png" alt="The Working Title">
                 <div class="card-block">
                     <p class="card-text">A personalised internet homepage built on the MEAN stack. This is a group project for our software
-                        engineering module. It should be completed by May.
+                        engineering module. It will be completed by May.
                     </p>
                 </div>
             </div>
@@ -214,8 +218,8 @@
                 </div>
                 <img class="img-fluid" src="images/WT.png" alt="The Working Title">
                 <div class="card-block">
-                    <p class="card-text">An bookshop's website running on a CGI backend written in C. Developed for our first year final
-                        group project in C programming
+                    <p class="card-text">A bookshop's website running on a CGI backend written in C. Developed for our first year final
+                        group project in C programming.
                     </p>
                 </div>
             </div>
@@ -259,29 +263,29 @@
         <div class="card card-block whiteBackground" id="contactBox">
             <h3 class="card-title">Let's get in touch!</h3>
             
-            <div class="text-xs-center col-xs-4">
-                <span class="contactIcon" id="twitterLink">
-                    <a href="https://twitter.com/David_DByrne" target="blank">
+            <div class="text-xs-center col-xs-12 col-md-4">
+                <a href="https://twitter.com/David_DByrne" target="blank" id="twitterLink">
+                    <span class="contactIcon">
                         <i class="fa fa-twitter fa-3x"></i><br>
-                    </a>
-                </span>
-                <a href="https://twitter.com/David_DByrne" target="blank">@David_DByrne</a>
+                    </span>
+                    @David_DByrne
+                </a>
             </div>
-            <div class="text-xs-center col-xs-4">
-                <span class="contactIcon" id="githubLink">
-                    <a href="https://github.com/David-Byrne" target="blank">
+            <div class="text-xs-center col-xs-12 col-md-4">
+                <a href="https://github.com/David-Byrne" target="blank" id="githubLink">
+                    <span class="contactIcon">
                         <i class="fa fa-github fa-3x"></i><br>
-                    </a>
-                </span>
-                <a href="https://github.com/David-Byrne" target="blank">David-Byrne</a>
+                    </span>
+                    David-Byrne
+                </a>
             </div>
-            <div class="text-xs-center col-xs-4">
-                <span class="contactIcon" id="emailLink">
-                    <a href="mailto:david.dbyrne@gmail.com" target="blank">
-                        <i class="fa fa-envelope-o fa-3x"></i><br>
-                    </a>
-                </span>
-                <a href="mailto:david.dbyrne@gmail.com" target="blank">David.dbyrne@gmail.com</a>
+            <div class="text-xs-center col-xs-12 col-md-4">
+                <a href="mailto:david.dbyrne@gmail.com" target="blank" id="emailLink">
+                    <span class="contactIcon">
+                            <i class="fa fa-envelope-o fa-3x"></i><br>
+                    </span>
+                    David.dbyrne@gmail.com
+                </a>
             </div>
             
             <span class="text-xs-right"><br> &nbsp;</span>
