@@ -1,134 +1,297 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>
-        David Byrne
-    </title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width:1200px) and (max-width:1600px)" href="style1200.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width:720px) and (max-width:1199px)" href="style700.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width:719px)" href="style0.css">
-    <script type="text/javascript">
-
-    </script>
+    <title>David Byrne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="David Byrne's portfolio">
+    <meta name="author" content="David Byrne">
+    <meta name="theme-color" content="#1AA260">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="tether.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700");
+        body {
+            font-family: "Roboto";
+            background-color: #39C9DF;
+            background-image: url("images/bg4.png");
+            background-size: cover;
+        }
+        
+        .greyBackground {
+            background-color: #FAFAFA;
+        }
+        
+        .whiteBackground {
+            background-color: #FFFFFF;
+        }
+        .skillName {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .title {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        
+        #twitterLink:not(:hover) .contactIcon{color: #373a3c;}
+        #twitterLink:hover {color: #1da1f2;}
+        #githubLink:not(:hover) .contactIcon{color: #373a3c;}
+        #githubLink:hover {color: #660066;}
+        #emailLink:not(:hover) .contactIcon{color: #373a3c;}
+        #emailLink:hover {color: #ff1a1a;}
+    </style>
 </head>
 
 <body>
-    <div id="header">
-        <br>
-        <img src="dragon8.gif" class="dragonClass">
-    </div>
+    <nav class="navbar navbar-dark bg-inverse">
+        <a class="navbar-brand" href="#">David Byrne</a>
+        <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item">
+                <a class="nav-link" target="blank" href="https://github.com/David-Byrne">Github</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="mainContent" class="container">
+        <h1 class="text-xs-center title"> Student, Developer and Tech Enthusiast</h1>
+        <!--bigger than: 
+        <span class="hidden-xs-down"> xs</span>
+        <span class="hidden-sm-down"> sm</span>
+        <span class="hidden-md-down"> md</span>
+        <span class="hidden-lg-down"> lg</span>
+        <span class="hidden-xl-down"> xl</span>-->
 
-    <div class="section">
-        <!--Formatted with the > on the next line as any white space shows up as a space in the website itself-->
-        <a href="#aboutme"><span class="button">About Me</span></a
-			><a href="#web"><span class="button">Web</span></a
-			><a href="#c"><span class="button">C</span></a
-			><a href="#java"><span class="button">Java</span></a
-			><a href="#github"><span class="button">Github</span></a>
-    </div>
+        <div class="card card-block whiteBackground">
+            <h3 class="card-title">About me</h3>
+            <p class="card-text">
+                I'm currently a second year Computer Science & IT student in NUI Galway and I'm enjoying every minute of it. I've always loved
+                maths and other subjects that invlove problem solving so with a strong interest in technology, computer science
+                was an obvious choice. I love working with new and exciting things so it's a great area to be in.
+            </p>
+        </div>
 
-    <a name="aboutme"></a>
-    <div class="section section1" id="aboutme">
-        <div class="text">
-            <h1>About me</h1> My name is David Byrne and I'm a second year in computer science and IT in NUI Galway. I'm very interested in
-            technology and spend a lot of my free time trying out new and exciting things, this website being one of the
-            results.
-            <br>
-            <br> I'm using this website as a portfolio of sorts so you can see my other projects and code I've written. I try
-            to keep updating this as I learn more and more so it's always a work in progress.
-            <br>
-            <br> My latest completed project is called <a href="http://david-byrne.github.io/Hangons/">Hangons</a> and it's described
-            in the <a href="#web">Web</a> section. I'm currently developing a web app using the MEAN stack in a group project
-            but that's not at a stage to share quite yet. Also I'm planning to make a proper Android app once I've learned
-            enough Java so that's another thing to watch out for.
-            <br>
-            <br>
+        <div class="card card-block whiteBackground">
+            <h3 class="card-title">Languages, Frameworks and Skills</h3>
+            <div class="text-xs-center">
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/java.png" alt="Java icon">
+                    <div class="skillName">
+                        <span class="card-title text-xs-center">Java</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/c.gif" alt="C icon">
+                    <div class="skillName">
+                        <span class="card-title">C</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/HTML5.png" alt="HTML icon">
+                    <div class="skillName">
+                        <span class="card-title ">HTML</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/css3.png" alt="CSS icon">
+                    <div class="skillName">
+                        <span class="card-title ">CSS</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/js.jpg" alt="JavaScript icon">
+                    <div class="skillName">
+                        <span class="card-title">Javascript</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/angularjs.png" alt="AngularJS icon">
+                    <div class="skillName">
+                        <span class="card-title">Angular.js</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/nodejs.png" alt="NodeJS icon">
+                    <div class="skillName">
+                        <span class="card-title">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/mocha.png" alt="MochaJS icon">
+                    <div class="skillName">
+                        <span class="card-title">Mocha.js</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/matlab.png" alt="Matlab icon">
+                    <div class="skillName">
+                        <span class="card-title">Matlab</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/sql.png" alt="SQL icon">
+                    <div class="skillName">
+                        <span class="card-title">SQL</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/mongodb.png" alt="MongoDB icon">
+                    <div class="skillName">
+                        <span class="card-title">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                    <img class="card-img-top img-fluid" src="images/git.png" alt="Git icon">
+                    <div class="skillName">
+                        <span class="card-title">Git</span>
+                    </div>
+                </div>
+
+            </div>
+            <p class="text-xs-right">and more...</p>
+        </div>
+
+        <div class="card card-block whiteBackground">
+            <h3 class="card-title">Some of my Projects</h3>
+
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="http://david-byrne.github.io/Hangons/" target="blank">
+                        <h4 class="card-title">Hangons</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/Hangons.png" alt="Hangons">
+                <div class="card-block">
+                    <p class="card-text">A client side parser and formatter for Hangouts messenger's JSON backup data. I developed 
+                        over the Christmas break as a personal project.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="https://github.com/Eoin-M/yourspace" target="blank">
+                        <h4 class="card-title">Yourspace</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/Yourspace2.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A personalised internet homepage built on the MEAN stack. This is a group project for our software
+                        engineering module. It will be completed by May.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="https://github.com/David-Byrne/SpaceInvaders" target="blank">
+                        <h4 class="card-title">Space Invaders</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/SpaceInvaders.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A version of the classic arcade game written in Java. This was a project in our Game Development
+                        module in second year.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="http://danu6.it.nuigalway.ie/DavidByrne/WT/" target="blank">
+                        <h4 class="card-title">The Working Title</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/WT.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A bookshop's website running on a CGI backend written in C. Developed for our first year final
+                        group project in C programming.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="http://danu6.it.nuigalway.ie/DavidByrne/crypto/" target="blank">
+                        <h4 class="card-title">Crypto</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/Crypto.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A website that implements basic encryption and decryption using JavaScript. I made it over
+                        Christmas in first year to learn some cryptography.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card-block">
+                    <a href="http://danu6.it.nuigalway.ie/DavidByrne/BBB/" target="blank">
+                        <h4 class="card-title">Byrne's Brilliant Bazaar</h4>
+                    </a>
+                </div>
+                <img class="img-fluid" src="images/BBB.png" alt="The Working Title">
+                <div class="card-block">
+                    <p class="card-text">A imaginary shop's website developed in first year to learn basic HTML and CSS. We were 
+                        encouraged to make it fun and light hearted.
+                    </p>
+                </div>
+            </div>
+
+            <span class="text-xs-right"> &nbsp;</span>
+            <!-- Needed to keep the individual cards within the project card. If it's not here the project card slides up underneath them
+            possible a bug inn Bootstrap 4 alpha V2. 
+            Checked with dev branch of bootstrap 4 and it's no longer needed so the bug must've been patched and should be
+            fixed in alpha V3-->
+
+        </div>
+        
+        <div class="card card-block whiteBackground" id="contactBox">
+            <h3 class="card-title">Let's get in touch!</h3>
+            
+            <div class="text-xs-center col-xs-12 col-md-4">
+                <a href="https://twitter.com/David_DByrne" target="blank" id="twitterLink">
+                    <span class="contactIcon">
+                        <i class="fa fa-twitter fa-3x"></i><br>
+                    </span>
+                    @David_DByrne
+                </a>
+            </div>
+            <div class="text-xs-center col-xs-12 col-md-4">
+                <a href="https://github.com/David-Byrne" target="blank" id="githubLink">
+                    <span class="contactIcon">
+                        <i class="fa fa-github fa-3x"></i><br>
+                    </span>
+                    David-Byrne
+                </a>
+            </div>
+            <div class="text-xs-center col-xs-12 col-md-4">
+                <a href="mailto:david.dbyrne@gmail.com" target="blank" id="emailLink">
+                    <span class="contactIcon">
+                            <i class="fa fa-envelope-o fa-3x"></i><br>
+                    </span>
+                    David.dbyrne@gmail.com
+                </a>
+            </div>
+            
+            <span class="text-xs-right"><br> &nbsp;</span>
         </div>
     </div>
-
-    <div class="partition"></div>
-    <a name="web"></a>
-    <div class="section ">
-        <div class="text">
-            <h1>Web</h1> I have made a few websites both for assignments and to improve my skills when I've got free time. They're getting
-            better each time and I learn more and get more experienced at it.
-            <br>
-            <br> I designed this to add a unique look to my portfolio as I'm very interested in space.
-            <br>
-            <br> Over the Christmas break in second year I developed <a href="http://david-byrne.github.io/Hangons/">Hangons</a>.
-            It's a fully client side web-app to parse the Hangouts.json data file you get when you back up your Hangouts
-            messaging data. It uses Angular.js (1) and a Bootstrap theme and can convert the Hangouts.json file into a much
-            more friendly format. It can create a simplified version of the JSON file which takes up less than a fifth of
-            the space compared to the version offered by Google Takeout.
-            <br>
-            <br> I made <a href="http://danu6.it.nuigalway.ie/DavidByrne/WT/">The Working Title</a> in a group project at the
-            end of first year in our C programming module. Unfortunately it doesn't do much at the moment as its back-end
-            was built using C and CGI which isn't supported by the server it's currently on.
-            <br>
-            <br> Over the Christmas holidays in first year I built <a href="http://danu6.it.nuigalway.ie/DavidByrne/crypto/">Crypto</a>            to improve my cryptography skills. It supports Reverse, Rot13 and Affine cyphers but was more built as a proof
-            of concept rather than to serve a cryptography service.
-            <br>
-            <br> During the first semester of first year I created <a href="http://danu6.it.nuigalway.ie/DavidByrne/BBB/">
-				Byrne's Brilliant Bazaar</a> for the continous assessment part of the module. We were given a set list of things to include
-            each week and we were encouraged to personalise it and give it a light humoured theme.
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div class="partition"></div>
-    <a name="c"></a>
-    <div class="section ">
-        <div class="text">
-            <h1>C</h1> I did C in first year and you can see many of the labs and some of my projects on my
-            <a href="https://github.com/David-Byrne/C-programming">C GitHub repository</a>.
-            <br>
-            <br>We finished the year with a final group project. My team decided to use CGI to connect it to a webpage for a
-            GUI (see The Working Title in the web section). We incorporated the javascript we learnt in other modules as
-            a client-side language as we weren't limited to just C for the project. The back end was written entirely in
-            C and it kept track of stock, decrypted the card details, dealt with all the transactions, saved the details
-            entered in feedback forms into text files and allowed people with admin access to edit and delete stock records.
-            <br> At that point it was the largest single project either of us had ever done and our first time to use CGI and
-            C in a non-trivial manner. We found it extremely satisfying however and learned loads from the experience.
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div class="partition"></div>
-    <a name="java"></a>
-    <div class="section ">
-        <div class="text">
-            <h1>Java</h1> I started studying Java this year. During the first semester we we focusing on learning the Object Orientated
-            aspects of it but now we're learning more about data-structures and algorithms. My labs and assignments from
-            the first semester are up on my Java Github repo.
-            <br>
-            <br> With the Java I've learned so far I made a very simple android app but I'll wait until I'm more experienced
-            in Java before doing any serious android development.
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div class="partition"></div>
-    <a name="github"></a>
-    <div class="section ">
-        <div class="text">
-            <h1>Github</h1> My GitHub is home to many of my projects and assignments in C and Java. Most of my web development projects
-            are hosted on the server NUI Galway allocated me space on or on a Github pages site. They're linked above in
-            the web section.
-            <br>
-            <br>
-        </div>
-    </div>
-    <div class="partition"></div>
-    <div id="base" class="engine">
-        <img src="engine5.gif" class="engineImg">
-    </div>
-    <div class="bottom">Designed by David Byrne, 2015-2016</div>
+    
 </body>
 
 </html>
