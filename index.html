@@ -9,7 +9,7 @@
     <meta name="author" content="David Byrne">
     <meta name="theme-color" content="#373A3C">
     <meta name="google-site-verification" content="v0b_1MLu0OiIn6CC_vdSSN2oALRLMvILa9iYlsUAu7g" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
         @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,500");
@@ -50,16 +50,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-inverse">
-        <a class="navbar-brand" href="#">David Byrne</a>
-        <ul class="nav navbar-nav pull-xs-right">
+    <nav class="navbar navbar-toggleable-xl navbar-inverse bg-inverse">
+        <a class="navbar-brand mr-auto" href="#">David Byrne</a>
+        <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://github.com/David-Byrne">Github</a>
             </li>
         </ul>
     </nav>
     <div id="mainContent" class="container">
-        <h1 class="text-xs-center title"> Student, Developer and Tech Enthusiast</h1>
+        <h1 class="text-center title"> Student, Developer and Tech Enthusiast</h1>
         <!--bigger than: 
         <span class="hidden-xs-down"> xs</span>
         <span class="hidden-sm-down"> sm</span>
@@ -67,112 +67,136 @@
         <span class="hidden-lg-down"> lg</span>
         <span class="hidden-xl-down"> xl</span>-->
 
-        <div class="card card-block whiteBackground">
+        <div class="card mb-3 card-block whiteBackground">
             <h3 class="card-title">About me</h3>
             <p class="card-text">
-                I'm a second year Computer Science & IT student in NUI Galway and I'm enjoying every minute of it. I've always loved
+                I'm a second year Computer Science &amp; IT student in NUI Galway and I'm enjoying every minute of it. I've always loved
                 maths and other subjects that involve problem solving. With a strong interest in technology, studying computer science
                 was an obvious choice. It's a great area to be in as I love working with new and exciting things, this website
                 is using an alpha preview of Bootstrap 4 for example!
             </p>
         </div>
 
-        <div class="card card-block whiteBackground">
+        <div class="card mb-3 card-block whiteBackground">
             <h3 class="card-title">Languages, Frameworks and Skills</h3>
-            <div class="text-xs-center">
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/java.png" alt="Java icon">
+            <div class="text-center row m-0">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/java.png" alt="Java icon">
+                    </div>
                     <div class="skillName">
-                        <span class="card-title text-xs-center">Java</span>
+                        <span class="card-title text-center">Java</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/c.gif" alt="C icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/c.gif" alt="C icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">C</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/HTML5.png" alt="HTML icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/HTML5.png" alt="HTML icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title ">HTML</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/css3.png" alt="CSS icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/css3.png" alt="CSS icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title ">CSS</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/js.jpg" alt="JavaScript icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/js.jpg" alt="JavaScript icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">JavaScript</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/angularjs.png" alt="AngularJS icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/angularjs.png" alt="AngularJS icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">AngularJS</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/nodejs.png" alt="NodeJS icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/nodejs.png" alt="NodeJS icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">Node.js</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/mocha.png" alt="MochaJS icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/mocha.png" alt="MochaJS icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">Mocha.js</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/matlab.png" alt="Matlab icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/matlab.png" alt="Matlab icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">Matlab</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/sql.png" alt="SQL icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/sql.png" alt="SQL icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">SQL</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/mongodb.png" alt="MongoDB icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/mongodb.png" alt="MongoDB icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">MongoDB</span>
                     </div>
                 </div>
 
-                <div class="card greyBackground col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <img class="card-img-top img-fluid" src="images/git.png" alt="Git icon">
+                <div class="card mb-2 px-0 greyBackground col-4 col-sm-3 col-md-2">
+                    <div class="p-2">
+                        <img class="card-img-top img-fluid" src="images/git.png" alt="Git icon">
+                    </div>
                     <div class="skillName">
                         <span class="card-title">Git</span>
                     </div>
                 </div>
 
             </div>
-            <p class="text-xs-right">and more...</p>
+            <span class="text-right">and more...</span>
         </div>
 
-        <div class="card card-block whiteBackground">
+        <div class="card mb-3 card-block whiteBackground">
             <h3 class="card-title">Some of my Projects</h3>
-            <div class="row">
-                <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-block">
+            <div class="row m-0">
+                <div class="card mb-2 greyBackground text-center col-12 col-md-6 col-xl-4">
+                    <div class="pt-3">
                         <a href="http://david-byrne.github.io/Hangons/" target="_blank">
                             <h4 class="card-title">Hangons</h4>
                         </a>
@@ -185,8 +209,8 @@
                     </div>
                 </div>
                 
-                <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-block">
+                <div class="card mb-2 greyBackground text-center col-12 col-md-6 col-xl-4">
+                    <div class="pt-3">
                         <a href="https://github.com/Eoin-M/yourspace" target="_blank">
                             <h4 class="card-title">Yourspace</h4>
                         </a>
@@ -200,8 +224,8 @@
                     </div>
                 </div>
                 
-                <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-block">
+                <div class="card mb-2 greyBackground text-center col-12 col-md-6 col-xl-4">
+                    <div class="pt-3">
                         <a href="https://github.com/David-Byrne/SpaceInvaders" target="_blank">
                             <h4 class="card-title">Space Invaders</h4>
                         </a>
@@ -214,8 +238,8 @@
                     </div>
                 </div>
                 
-                <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-block">
+                <div class="card mb-2 greyBackground text-center col-12 col-md-6 col-xl-4">
+                    <div class="pt-3">
                         <a href="http://danu6.it.nuigalway.ie/DavidByrne/WT/" target="_blank">
                             <h4 class="card-title">The Working Title</h4>
                         </a>
@@ -228,8 +252,8 @@
                     </div>
                 </div>
                 
-                <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-block">
+                <div class="card mb-2 greyBackground text-center col-12 col-md-6 col-xl-4">
+                    <div class="pt-3">
                         <a href="http://danu6.it.nuigalway.ie/DavidByrne/crypto/" target="_blank">
                             <h4 class="card-title">Crypto</h4>
                         </a>
@@ -242,8 +266,8 @@
                     </div>
                 </div>
                 
-                <div class="card greyBackground text-xs-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card-block">
+                <div class="card mb-2 greyBackground text-center col-12 col-md-6 col-xl-4">
+                    <div class="pt-3">
                         <a href="http://danu6.it.nuigalway.ie/DavidByrne/BBB/" target="_blank">
                             <h4 class="card-title">Byrne's Brilliant Bazaar</h4>
                         </a>
@@ -258,40 +282,43 @@
             </div>
         </div>
         
-        <div class="card card-block whiteBackground" id="contactBox">
+
+        
+        <div class="card mb-3 card-block whiteBackground" id="contactBox">
             <h3 class="card-title">Let's get in touch!</h3>
-            
-            <div class="text-xs-center col-xs-12 col-md-4 contactMe">
-                <a href="https://twitter.com/David_DByrne" target="_blank" id="twitterLink">
-                    <span class="contactIcon">
-                        <i class="fa fa-twitter fa-3x"></i><br>
-                    </span>
-                    @David_DByrne
-                </a>
-            </div>
-            <div class="text-xs-center col-xs-12 col-md-4 contactMe">
-                <a href="https://github.com/David-Byrne" target="_blank" id="githubLink">
-                    <span class="contactIcon">
-                        <i class="fa fa-github fa-3x"></i><br>
-                    </span>
-                    David-Byrne
-                </a>
-            </div>
-            <div class="text-xs-center col-xs-12 col-md-4 contactMe">
-                <a href="mailto:david.dbyrne@gmail.com" target="_blank" id="emailLink">
-                    <span class="contactIcon">
-                            <i class="fa fa-envelope-o fa-3x"></i><br>
-                    </span>
-                    David.dbyrne@gmail.com
-                </a>
+            <div class="row">
+                <div class="text-center col-12 col-md-4 contactMe">
+                    <a href="https://twitter.com/David_DByrne" target="_blank" id="twitterLink">
+                        <span class="contactIcon">
+                            <i class="fa fa-twitter fa-3x"></i><br>
+                        </span>
+                        @David_DByrne
+                    </a>
+                </div>
+                <div class="text-center col-12 col-md-4 contactMe">
+                    <a href="https://github.com/David-Byrne" target="_blank" id="githubLink">
+                        <span class="contactIcon">
+                            <i class="fa fa-github fa-3x"></i><br>
+                        </span>
+                        David-Byrne
+                    </a>
+                </div>
+                <div class="text-center col-12 col-md-4 contactMe">
+                    <a href="mailto:david.dbyrne@gmail.com" target="_blank" id="emailLink">
+                        <span class="contactIcon">
+                                <i class="fa fa-envelope-o fa-3x"></i><br>
+                        </span>
+                        David.dbyrne@gmail.com
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
