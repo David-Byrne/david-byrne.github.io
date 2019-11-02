@@ -1,0 +1,6 @@
+name: TAP test
+author: David Byrne
+description: Runs some quick tests against my live websites to ensure they're working correctly
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
