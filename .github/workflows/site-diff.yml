@@ -1,0 +1,13 @@
+name: TAP test
+on:
+  schedule:
+    # Run every day at 8am
+    - cron:  '0 8 * * *'
+
+jobs:
+  diff-site:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ./.github/actions/tap-test
