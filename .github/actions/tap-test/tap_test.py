@@ -73,5 +73,17 @@ class TestBlog(TestCase):
         self.assertGreater(len(feed.findall("{http://www.w3.org/2005/Atom}entry")), 4, "Expected there to be more than 4 blog entries in the RSS")
 
 
+class TestDevSite(TestCase):
+
+    def test_apex_redirect_to_main_site(self):
+        resp = requests.head("https://davidbyrne.dev")
+        self.assertEqual(301, resp.status_code)
+        self.assertEqual("https://www.davidbyrne.io/", resp.headers["Location"])
+
+    def test_www_redirect_to_main_site(self):
+        resp = requests.head("https://www.davidbyrne.dev")
+        self.assertEqual(301, resp.status_code)
+        self.assertEqual("https://www.davidbyrne.io/", resp.headers["Location"])
+
 if __name__ == '__main__':
     unittest.main()
