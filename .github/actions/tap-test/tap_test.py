@@ -7,8 +7,13 @@ from defusedxml import ElementTree
 
 class TestWebsite(TestCase):
 
-    def test_apex_to_www_redirect(self):
-        resp = requests.head("http://davidbyrne.io") # won't auto-redirect from https apex, see https://github.community/t5/GitHub-Pages/Does-GitHub-Pages-Support-HTTPS-for-www-and-subdomains/td-p/7116/page/4
+    def test_http_apex_to_www_redirect(self):
+        resp = requests.head("http://davidbyrne.io")
+        self.assertEqual(301, resp.status_code)
+        self.assertEqual("https://www.davidbyrne.io/", resp.headers["Location"])
+
+    def test_https_apex_to_www_redirect(self):
+        resp = requests.head("https://davidbyrne.io")
         self.assertEqual(301, resp.status_code)
         self.assertEqual("https://www.davidbyrne.io/", resp.headers["Location"])
 
