@@ -53,7 +53,6 @@ class TestFilesSite(TestCase):
     def test_fyp_is_available(self):
         resp = requests.head("https://files.davidbyrne.io/FYP")
         self.assertEqual(200, resp.status_code)
-        self.assertGreater(int(resp.headers["Content-Length"]), 1400000, "Expected the response to at least be 1400000 bytes")
         self.assertEqual("application/pdf", resp.headers["Content-Type"])
         self.assertIn("1b5866d5cc69a8247b5498936b232667-ssl", resp.headers["Etag"])
 
